@@ -1,29 +1,56 @@
 # Human Behavior & Vision Fusion
 
-This project explores the prediction of human motion (e.g., pedestrian movement) by combining scene context and vision-based deep learning models. The goal is to understand behavior in real-world environments like crosswalks, sidewalks, or intersections using datasets and models like LSTM and Transformers.
+A modular deep learning framework to predict pedestrian behavior using visual context and movement history. Built for research in smart mobility, autonomous systems, and human-aware AI.
 
-##  Motivation
-Understanding human behavior is critical for applications in autonomous driving, smart cities, and safety monitoring. This repo explores scene-aware modeling that fuses visual context with temporal predictions.
+---
 
-##  Structure
-- `notebooks/`: Main Jupyter notebooks for exploration and experiments.
-- `src/`: Model architecture (LSTM/Transformer).
-- `data/`: Notes or links to datasets used.
-- `requirements.txt`: Python package dependencies.
+##  Objectives
 
-##  Example Datasets
-- [PIE Dataset (Pedestrian Intention Estimation)](https://data.nvision2.eecs.yorku.ca/PIE_dataset/)
-- [JAAD Dataset](https://data.nvision2.eecs.yorku.ca/JAAD_dataset/)
-- [ETH/UCY Dataset](https://github.com/vita-epfl/social-force)
+- Predict future human motion from past trajectory + scene image
+- Combine vision-based context with deep sequential models
+- Evaluate across real-world datasets (PIE, JAAD, ETH/UCY)
+- Support modular extensions (e.g., scene semantics, IMU fusion)
 
-##  Tech Stack
-- Python 
+---
+
+##  Methods
+
+| Task                       | Method                            |
+|---------------------------|-----------------------------------|
+| Feature extraction        | ResNet / Semantic Segmentation    |
+| Sequence modeling         | LSTM, Transformer                 |
+| Fusion mechanism          | Late fusion (vision + history)    |
+| Evaluation                | ADE / FDE / Classification Acc.   |
+| Visualization             | Trajectory overlay on scene       |
+
+---
+
+##  Folder Structure
+
+notebooks/ → Jupyter experiments (EDA, training)
+src/ → PyTorch modules and data loaders
+configs/ → YAML config files
+data/ → Dataset references and processed files
+assets/ → Results and visualizations
+
+
+---
+
+##  Datasets
+
+- [PIE (Pedestrian Intention Estimation)](https://data.nvision2.eecs.yorku.ca/PIE_dataset/)
+- [JAAD](https://data.nvision2.eecs.yorku.ca/JAAD_dataset/)
+- [ETH/UCY](https://github.com/vita-epfl/social-force)
+
+---
+
+## 🛠 Tech Stack
+
+- Python 3.10+
 - PyTorch
-- NumPy
+- torchvision
 - OpenCV
-- Matplotlib / Seaborn
+- NumPy, matplotlib
+- PyYAML
 
-##  Goals
-- Preprocess and visualize pedestrian behavior datasets.
-- Build models (LSTM, Transformer) to predict motion trajectory.
-- Fuse scene semantics into prediction pipeline.
+
