@@ -16,14 +16,14 @@ Understanding human behavior is critical for applications in autonomous driving,
 - [JAAD Dataset](https://data.nvision2.eecs.yorku.ca/JAAD_dataset/)
 - [ETH/UCY Dataset](https://github.com/vita-epfl/social-force)
 
-## 🔧 Tech Stack
+##  Tech Stack
 - Python 
 - PyTorch
 - NumPy
 - OpenCV
 - Matplotlib / Seaborn
 
-## 🚀 Goals
+##  Goals
 - Preprocess and visualize pedestrian behavior datasets.
 - Build models (LSTM, Transformer) to predict motion trajectory.
 - Fuse scene semantics into prediction pipeline.
