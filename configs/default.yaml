@@ -1,0 +1,16 @@
+model:
+  type: LSTM
+  input_size: 2
+  hidden_size: 64
+  num_layers: 2
+  dropout: 0.1
+
+training:
+  batch_size: 32
+  epochs: 50
+  learning_rate: 0.001
+
+data:
+  dataset: PIE
+  input_seq_len: 8
+  pred_seq_len: 12
