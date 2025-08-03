@@ -23,15 +23,6 @@ A modular deep learning framework to predict pedestrian behavior using visual co
 | Evaluation                | ADE / FDE / Classification Acc.   |
 | Visualization             | Trajectory overlay on scene       |
 
----
-
-##  Folder Structure
-
-notebooks/ → Jupyter experiments (EDA, training)
-src/ → PyTorch modules and data loaders
-configs/ → YAML config files
-data/ → Dataset references and processed files
-assets/ → Results and visualizations
 
 
 ---
